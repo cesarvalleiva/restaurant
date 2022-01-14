@@ -1,0 +1,21 @@
+.tituloPremium {
+  text-align: center;
+  margin-top: 30px;
+  font-weight: 700;
+}
+
+.contenedorPremium {
+  width: 100%;
+  display: flex;
+  padding: 10px 0 30px 0;
+  justify-content: space-between;
+}
+
+.hamburguesaPremium {
+  width: 49%;
+  border-radius: 15px;
+}
+
+.hamburguesaPremium img {
+  border-radius: 15px !important;
+}

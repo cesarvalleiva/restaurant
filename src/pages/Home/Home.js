@@ -1,8 +1,19 @@
+import Creacion from '../../components/Creacion/Creacion';
+import Opciones from '../../components/Opciones/Opciones';
+import Portada from '../../components/Portada/Portada';
+import Premium from '../../components/Premium';
+import Promos from '../../components/Promos/Promos';
 import './Home.css'
 
 const Home = () => {
     return ( 
-        <h1>My App</h1>
+        <>
+            <Portada />
+            <Opciones />
+            <Premium />
+            {/* <Promos /> */}
+            <Creacion />
+        </>
      );
 }
  
