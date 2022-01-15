@@ -95,42 +95,43 @@ const Creacion = () => {
                         ))}
                     </div>
                     <div className='precioArmado'>
-                        <h3>Tu pedido 🗒</h3>
-                        <div className='apagar'>
-                            <div className='apagarImagenNombre'>
-                                <img src={Carne} alt="Carne" width={50} />
-                                <p>Carne</p>
-                            </div>
-                            <p>$150</p>
-                        </div>
-                        {seleccionados.map(selec => (
-                            <div key={selec.id} className='d-flex'>
-                                <div className='apagar'>
-                                    <div className='apagarImagenNombre'>
-                                        <img src={selec.imagen} alt={selec.nombre} width={50} />
-                                        <p>{selec.nombre} </p>
-                                    </div>
-                                    <div className="precioYeliminarIngrediente">
-                                        <p>${selec.precio}</p>
-                                        <i className="bi bi-trash text-danger" onClick={()=>eliminarIngrediente(selec.id)}></i>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                        
                         {total !== 150 ? 
                             <>
-                            <h2 className='precioTotal'>Total: ${total}</h2>
-                            <div className='total'>
-                                <div className='w-100 mt-3'>
-                                    <div className="d-grid gap-2">
-                                        <button className='btn btn-warning realizarPedido'>Confirmar pedido</button>
+                                <h3>Tu pedido 🗒</h3>
+                                <div className='apagar'>
+                                    <div className='apagarImagenNombre'>
+                                        <img src={Carne} alt="Carne" width={50} />
+                                        <p>Carne</p>
+                                    </div>
+                                    <p>$150</p>
+                                </div>
+                                {seleccionados.map(selec => (
+                                    <div key={selec.id} className='d-flex'>
+                                        <div className='apagar'>
+                                            <div className='apagarImagenNombre'>
+                                                <img src={selec.imagen} alt={selec.nombre} width={50} />
+                                                <p>{selec.nombre} </p>
+                                            </div>
+                                            <div className="precioYeliminarIngrediente">
+                                                <p>${selec.precio}</p>
+                                                <i className="bi bi-trash text-danger" onClick={()=>eliminarIngrediente(selec.id)}></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                ))}
+                        
+                        
+                                <h2 className='precioTotal'>Total: ${total}</h2>
+                                <div className='total'>
+                                    <div className='w-100 mt-3'>
+                                        <div className="d-grid gap-2">
+                                            <button className='btn btn-warning realizarPedido'>Confirmar pedido</button>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
                             </>
                         :
-                            ''
+                            <h4 className='text-center'>Empezá a seleccionar!</h4>
                         }
                     </div>
                 </div>
