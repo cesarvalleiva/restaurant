@@ -1,4 +1,5 @@
 import Creacion from '../../components/Creacion/Creacion';
+import Footer from '../../components/Footer';
 import Opciones from '../../components/Opciones/Opciones';
 import Portada from '../../components/Portada/Portada';
 import Premium from '../../components/Premium';
@@ -13,6 +14,7 @@ const Home = () => {
             <Premium />
             {/* <Promos /> */}
             <Creacion />
+            <Footer />
         </>
      );
 }

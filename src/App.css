@@ -1,7 +1,9 @@
-/* html,
+html,
 #root {
-  background-color: rgb(153, 74, 74);
-} */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 /* @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,400;0,600;0,700;1,400;1,600&display=swap"); */
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Titillium+Web:ital,wght@0,200;0,400;0,600;0,700;1,400;1,600&display=swap");

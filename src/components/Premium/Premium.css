@@ -16,6 +16,13 @@
   border-radius: 15px;
 }
 
+.contenedorImagenPremium {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 7px !important;
+}
+
 .hamburguesaPremium img {
   border-radius: 15px !important;
 }

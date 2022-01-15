@@ -5,12 +5,13 @@ import Queso from '../../assets/img/queso.png';
 import Panceta from '../../assets/img/panceta.png';
 import Papas from '../../assets/img/papas.png';
 import Carne from '../../assets/img/carne.png';
+import Cebolla from '../../assets/img/cebolla.png';
 import './Creacion.css'
 import { useEffect, useState } from 'react';
 
 const Creacion = () => {
     const [seleccionados, setSeleccionados] = useState([]);
-    const [total, setTotal] = useState(0)
+    const [total, setTotal] = useState(150)
 
     let info = [
         {
@@ -48,6 +49,12 @@ const Creacion = () => {
             nombre: "Papas",
             imagen: Papas,
             precio: 60
+        },
+        {
+            id: 7,
+            nombre: "Cebolla",
+            imagen: Cebolla,
+            precio: 60
         }
     ]
 
@@ -62,6 +69,11 @@ const Creacion = () => {
         ))
     }
 
+    const eliminarIngrediente = id => {
+        setTotal(150)
+        setSeleccionados(seleccionados.filter(selec => selec.id !== id))
+    }
+
     useEffect(() => {
         sumarTotal()
     }, [seleccionados])
@@ -69,17 +81,17 @@ const Creacion = () => {
     return (
         <div className='contenedorIngredientes'>
             <div className='container'>
-                <h2>Armá la tuya! 🍔</h2>   
+                <h2>Armá la tuya! 🍔🍟</h2>   
                 <div className='contenedorGeneral'>
                     <div className='ingredientes'>
                         {info.map(ingrediente => (
-                            <div className={seleccionados.find(ingre => ingre.id === ingrediente.id) ? 'ingredienteSeleccionado' : 'ingrediente'} key={ingrediente.id} onClick={() => seleccionar({...ingrediente})}>
+                            <button className={seleccionados.find(ingre => ingre.id === ingrediente.id) ? 'btn btn-warning ingredienteSeleccionado' : 'btn btn-outline-warning ingrediente'} key={ingrediente.id} onClick={() => seleccionar({...ingrediente})} disabled={seleccionados.find(ingre => ingre.id === ingrediente.id) ? true : false}>
                                 <img src={ingrediente.imagen} alt={ingrediente.nombre} />
                                 <div className='infoIngrediente'>
                                     <p>{ingrediente.nombre}</p>
                                     <p className='me-3'>{}${ingrediente.precio}</p>
                                 </div>
-                            </div>
+                            </button>
                         ))}
                     </div>
                     <div className='precioArmado'>
@@ -97,11 +109,25 @@ const Creacion = () => {
                                         <img src={selec.imagen} alt={selec.nombre} width={50} />
                                         <p>{selec.nombre} </p>
                                     </div>
-                                    <p>${selec.precio}</p>
+                                    <div className="precioYeliminarIngrediente">
+                                        <p>${selec.precio}</p>
+                                        <i className="bi bi-trash text-danger" onClick={()=>eliminarIngrediente(selec.id)}></i>
+                                    </div>
                                 </div>
                             </div>
                         ))}
-                        <div className='total'>Total = ${total}</div>
+                        
+                        {total !== 150 ? 
+                            <div className='total'>
+                                <div className='w-100 mt-3'>
+                                    <div className="d-grid gap-2">
+                                        <button className='btn btn-warning realizarPedido'>Total: ${total}</button>
+                                    </div>
+                                </div>
+                            </div>
+                        :
+                            ''
+                        }
                     </div>
                 </div>
             </div>
