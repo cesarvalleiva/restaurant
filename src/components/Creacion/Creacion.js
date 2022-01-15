@@ -95,6 +95,7 @@ const Creacion = () => {
                         ))}
                     </div>
                     <div className='precioArmado'>
+                        <h3>Tu pedido 🗒</h3>
                         <div className='apagar'>
                             <div className='apagarImagenNombre'>
                                 <img src={Carne} alt="Carne" width={50} />
@@ -118,13 +119,16 @@ const Creacion = () => {
                         ))}
                         
                         {total !== 150 ? 
+                            <>
+                            <h2 className='precioTotal'>Total: ${total}</h2>
                             <div className='total'>
                                 <div className='w-100 mt-3'>
                                     <div className="d-grid gap-2">
-                                        <button className='btn btn-warning realizarPedido'>Total: ${total}</button>
+                                        <button className='btn btn-warning realizarPedido'>Confirmar pedido</button>
                                     </div>
                                 </div>
                             </div>
+                            </>
                         :
                             ''
                         }

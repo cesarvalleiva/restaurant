@@ -17,24 +17,36 @@
   justify-content: space-between;
 }
 
-.card {
+.buscadas {
   width: 24%;
-  background-color: rgb(252, 190, 21);
   border-radius: 15px !important;
+  border: 0 !important;
 }
 
 .imgOpciones {
   border-radius: 15px !important;
 }
-/* 
-.card img {
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-} */
 
 .precio {
   font-size: 20px;
   font-weight: 700;
   padding: 0;
   margin: 0;
+}
+
+@media (max-width: 480px) {
+  .containerOpciones {
+    padding: 20px 0 10px 0;
+  }
+
+  .contenedorOpciones {
+    flex-wrap: wrap;
+  }
+
+  .buscadas {
+    width: 48%;
+    border-radius: 15px !important;
+    border: 0 !important;
+    margin-bottom: 10px;
+  }
 }

@@ -8,7 +8,7 @@ const Opciones = () => {
         <div className='containerOpciones'>
             <h2>Las más buscadas</h2>
             <div className='container contenedorOpciones'>
-                <div className="card border-0 shadow">
+                <div className="card shadow buscadas">
                     <img src="https://i.pinimg.com/originals/76/e6/e8/76e6e8253a7b5225f4d0ddfe37b0faaf.jpg" className="card-img-top imgOpciones" alt="..." />
                     <div className="card-body">
                         <h5 className="card-title">Card title</h5>
@@ -19,7 +19,7 @@ const Opciones = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card border-0 shadow">
+                <div className="card shadow buscadas">
                     <img src={Hamburguesa2} className="card-img-top imgOpciones" alt="..." />
                     <div className="card-body">
                         <h5 className="card-title">Card title</h5>
@@ -30,7 +30,7 @@ const Opciones = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card border-0 shadow">
+                <div className="card shadow buscadas">
                     <img src={Hamburguesa3} className="card-img-top imgOpciones" alt="..." />
                     <div className="card-body">
                         <h5 className="card-title">Card title</h5>
@@ -41,7 +41,7 @@ const Opciones = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card border-0 shadow">
+                <div className="card shadow buscadas">
                     <img src={Hamburguesa4} className="card-img-top imgOpciones" alt="..." />
                     <div className="card-body">
                         <h5 className="card-title">Card title</h5>

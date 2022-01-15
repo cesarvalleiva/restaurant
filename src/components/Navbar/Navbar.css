@@ -1,4 +1,4 @@
-.navbar {
+/* .navbar {
   height: 80px !important;
   position: fixed;
   z-index: 2;
@@ -7,4 +7,41 @@
 
 .navbar img {
   height: 60px;
+} */
+
+.contenedorNavbar {
+  width: 100%;
+  height: 80px;
+  top: 0;
+  background-color: #000;
+  position: fixed;
+  z-index: 2;
+  display: flex;
+}
+
+.contenedorNavbar img {
+  width: 80px;
+}
+
+.containerLogo {
+  display: flex;
+  align-items: center;
+}
+
+.containerLogo h1 {
+  color: rgb(252, 190, 21);
+  margin-left: 15px;
+  font-size: 25px;
+}
+
+.redesSocialesNavbar {
+  display: flex;
+  align-items: center;
+}
+
+.redesSocialesNavbar img {
+  width: 30px;
+  height: 30px;
+  margin-left: 15px;
+  cursor: pointer;
 }

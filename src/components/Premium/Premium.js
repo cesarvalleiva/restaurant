@@ -5,7 +5,7 @@ const Premium = () => {
         <>
             <h2 className='tituloPremium'>Las Premium</h2>
             <div className='container contenedorPremium'>
-                <div className="card hamburguesaPremium shadow">
+                <div className="card hamburguesaPremium shadow border-0">
                     <div className="row g-0">
                         <div className="col-md-5 contenedorImagenPremium">
                             <img src="https://okdiario.com/img/2021/03/06/4-hamburguesas-gourmet.jpg" className="img-fluid rounded-start" alt="..." />

@@ -4,7 +4,7 @@ import './Portada.css'
 const Portada = () => {
     return ( 
         <div className='contenedorPortada'>
-            <div className='container d-flex'>
+            <div className='container contenedorInfoPortada'>
                 <div className='contenedorImagenPortada'>
                     <img src={Hamburguesa} alt="Hamburguesa" className='hamburguesaPortada mt-3' />
                 </div>

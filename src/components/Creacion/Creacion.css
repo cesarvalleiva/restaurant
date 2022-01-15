@@ -28,7 +28,6 @@
 .ingrediente {
   width: 100%;
   height: 40px;
-  /* border: 1px solid rgb(219, 219, 219); */
   border: 1px solid rgb(252, 190, 21);
   border-radius: 7px;
   display: flex !important;
@@ -92,6 +91,10 @@
   padding: 0 20px;
 }
 
+.precioArmado h3 {
+  display: none;
+}
+
 .apagar {
   width: 100%;
   display: flex;
@@ -134,10 +137,8 @@
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  /* border-top: 1px solid rgb(252, 190, 21); */
   font-size: 20px;
   font-weight: 700;
-  margin-top: 5px;
 }
 
 .realizarPedido {
@@ -153,6 +154,11 @@
   box-shadow: none !important;
 }
 
+.precioTotal {
+  margin-bottom: 0 !important;
+  margin-top: 10px;
+}
+
 @media (max-width: 480px) {
   .contenedorGeneral {
     flex-direction: column;
@@ -161,5 +167,12 @@
   .ingredientes,
   .precioArmado {
     width: 100%;
+  }
+
+  .precioArmado h3 {
+    text-align: center;
+    font-weight: 700;
+    display: block;
+    margin: 10px 0;
   }
 }
