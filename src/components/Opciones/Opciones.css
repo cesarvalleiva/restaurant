@@ -1,3 +1,9 @@
+.contenedorTotalPremium {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
 .containerOpciones {
   width: 100%;
   height: 100%;
@@ -44,7 +50,7 @@
   }
 
   .buscadas {
-    width: 48%;
+    width: 49%;
     border-radius: 15px !important;
     border: 0 !important;
     margin-bottom: 10px;

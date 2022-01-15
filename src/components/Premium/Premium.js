@@ -2,7 +2,7 @@ import './Premium.css'
 
 const Premium = () => {
     return ( 
-        <>
+        <div className='contenedorTotalPremium'>
             <h2 className='tituloPremium'>Las Premium</h2>
             <div className='container contenedorPremium'>
                 <div className="card hamburguesaPremium shadow border-0">
@@ -76,7 +76,7 @@ const Premium = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
      );
 }
  
