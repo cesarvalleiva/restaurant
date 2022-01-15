@@ -9,7 +9,8 @@ import './Creacion.css'
 import { useEffect, useState } from 'react';
 
 const Creacion = () => {
-    const [seleccionados, setSeleccionados] = useState([])
+    const [seleccionados, setSeleccionados] = useState([]);
+    const [total, setTotal] = useState(0)
 
     let info = [
         {
@@ -54,10 +55,21 @@ const Creacion = () => {
         setSeleccionados([...seleccionados, ingrediente])
     }
 
+    const sumarTotal = () => {
+        let total = 150;
+        seleccionados.map(selec => (
+            setTotal(total += selec.precio)
+        ))
+    }
+
+    useEffect(() => {
+        sumarTotal()
+    }, [seleccionados])
+
     return (
         <div className='contenedorIngredientes'>
             <div className='container'>
-                <h2>Creá tu hamburguesa!</h2>   
+                <h2>Armá la tuya! 🍔</h2>   
                 <div className='contenedorGeneral'>
                     <div className='ingredientes'>
                         {info.map(ingrediente => (
@@ -89,7 +101,7 @@ const Creacion = () => {
                                 </div>
                             </div>
                         ))}
-                        <div className='total'>Total = $</div>
+                        <div className='total'>Total = ${total}</div>
                     </div>
                 </div>
             </div>
