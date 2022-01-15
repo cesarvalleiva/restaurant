@@ -45,3 +45,18 @@
   margin-left: 15px;
   cursor: pointer;
 }
+
+@media (max-width: 480px) {
+  .contenedorNavbar img {
+    width: 60px;
+  }
+
+  .containerLogo h1 {
+    font-size: 22px;
+  }
+
+  .redesSocialesNavbar img {
+    width: 25px;
+    height: 25px;
+  }
+}
