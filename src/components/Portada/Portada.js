@@ -9,7 +9,7 @@ const Portada = () => {
                     <img src={Hamburguesa} alt="Hamburguesa" className='hamburguesaPortada mt-3' />
                 </div>
                 <div className='contenedorTextoPortada'>
-                    <h1>Greelow Restaurant</h1>
+                    <h1>Bulldog Restaurant</h1>
                     <h2>Vení a probar las mejores burgers</h2>
                 </div>
             </div>

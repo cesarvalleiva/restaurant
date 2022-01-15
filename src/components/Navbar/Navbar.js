@@ -15,7 +15,7 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarText">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <Link className="nav-link active text-warning" aria-current="page" to="/">Greelow</Link>
+                            <Link className="nav-link active text-warning" aria-current="page" to="/">Bulldog</Link>
                         </li>
                     </ul>
                     <span className="navbar-text text-warning">
