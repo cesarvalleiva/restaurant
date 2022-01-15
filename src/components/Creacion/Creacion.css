@@ -175,4 +175,8 @@
     display: block;
     margin: 10px 0;
   }
+
+  .emepezaSeleccion {
+    margin-top: 20px;
+  }
 }

@@ -43,4 +43,9 @@
   .contenedorImagenPremium {
     padding: 0 !important;
   }
+
+  .hamburguesaPremium img {
+    border-top-left-radius: 15px !important;
+    border-top-right-radius: 15px !important;
+  }
 }

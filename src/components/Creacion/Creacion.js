@@ -131,7 +131,7 @@ const Creacion = () => {
                                 </div>
                             </>
                         :
-                            <h4 className='text-center'>Empezá a seleccionar!</h4>
+                            <h4 className='text-center emepezaSeleccion'>Empezá a seleccionar!</h4>
                         }
                     </div>
                 </div>
