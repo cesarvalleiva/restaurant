@@ -1,9 +1,9 @@
 import Hamburguesa2 from '../../assets/img/hamburguesa2.png'
 import Hamburguesa3 from '../../assets/img/hamburguesa3.png'
 import Hamburguesa4 from '../../assets/img/hamburguesa4.png'
-import './Opciones.css'
+import './Buscadas.css'
 
-const Opciones = () => {
+const Buscadas = () => {
     return ( 
         <div className='containerOpciones'>
             <h2>Las más buscadas</h2>
@@ -57,4 +57,4 @@ const Opciones = () => {
      );
 }
  
-export default Opciones;
+export default Buscadas;

@@ -1,1 +1,1 @@
-export { default } from './Opciones'
+export { default } from './Buscadas'
