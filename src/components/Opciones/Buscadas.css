@@ -34,6 +34,14 @@
   border-top-right-radius: 15px !important;
 }
 
+.card-body h5 {
+  font-weight: 700 !important;
+}
+
+.h5Buscadas {
+  text-align: center;
+}
+
 .precio {
   font-size: 20px;
   font-weight: 700;
