@@ -11,7 +11,7 @@ import { useEffect, useState } from 'react';
 
 const Creacion = () => {
     const [seleccionados, setSeleccionados] = useState([]);
-    const [total, setTotal] = useState(150)
+    const [total, setTotal] = useState(350)
 
     let info = [
         {
@@ -63,14 +63,14 @@ const Creacion = () => {
     }
 
     const sumarTotal = () => {
-        let total = 150;
+        let total = 350;
         seleccionados.map(selec => (
             setTotal(total += selec.precio)
         ))
     }
 
     const eliminarIngrediente = id => {
-        setTotal(150)
+        setTotal(350)
         setSeleccionados(seleccionados.filter(selec => selec.id !== id))
     }
 
@@ -95,7 +95,7 @@ const Creacion = () => {
                         ))}
                     </div>
                     <div className='precioArmado'>
-                        {total !== 150 ? 
+                        {total !== 350 ? 
                             <>
                                 <h3>Tu pedido 🗒</h3>
                                 <div className='apagar'>
@@ -103,7 +103,7 @@ const Creacion = () => {
                                         <img src={Carne} alt="Carne" width={50} />
                                         <p>Carne</p>
                                     </div>
-                                    <p>$150</p>
+                                    <p>$350</p>
                                 </div>
                                 {seleccionados.map(selec => (
                                     <div key={selec.id} className='d-flex'>
