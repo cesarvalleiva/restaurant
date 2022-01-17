@@ -42,7 +42,7 @@ const Creacion = () => {
             { info.length > 0 ?
                 <div className='contenedorIngredientes'>
                     <div className='container'>
-                        <h2>Armá la tuya! 🍔🍟</h2>   
+                        <h2>Armá la tuya!</h2>   
                         <div className='contenedorGeneral'>
                             <div className='ingredientes'>
                                 {info.map(ingrediente => (
@@ -92,7 +92,7 @@ const Creacion = () => {
                                         </div>
                                     </>
                                 :
-                                    <h4 className='text-center emepezaSeleccion'>Empezá a seleccionar!</h4>
+                                    <h4 className='text-center emepezaSeleccion'>Empezá a seleccionar!  🍔🍟</h4>
                                 }
                             </div>
                         </div>
