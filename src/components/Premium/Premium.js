@@ -1,39 +1,50 @@
-import { useContext, useEffect } from 'react';
-import { Context } from '../../store/burgerContext';
-import './Premium.css'
+import { useState, useEffect } from 'react';
+import axios from 'axios';
+import './Premium.css';
 
 const Premium = () => {
-    const {info, obtenerInfo} = useContext(Context);
+    const [info, setInfo] = useState([])
+
+    const obtenerInfo = async () => {
+        const response = await axios.get(`https://apipdtc.herokuapp.com/bulldog/premium`)
+        setInfo(response.data)
+    }
 
     useEffect(() => {
-        obtenerInfo('premium')
+        obtenerInfo()
     }, [])
     
     return ( 
-        <div className='contenedorTotalPremium'>
-            <h2 className='tituloPremium'>Las Premium</h2>
-            <div className='container contenedorPremium'>
-                {info.map(premium => (
-                    <div className="card hamburguesaPremium shadow">
-                        <div className="row g-0" key={premium.id}>
-                            <div className="col-md-5 contenedorImagenPremium">
-                                <img src="https://okdiario.com/img/2021/03/06/4-hamburguesas-gourmet.jpg" className="img-fluid rounded-start" alt={premium.nombre} />
-                            </div>
-                            <div className="col-md-7">
-                                <div className="card-body">
-                                    <h5 className="card-title">{premium.nombre}</h5>
-                                    <div className="card-text d-flex ingredientesPremium">{premium.ingredientes.map((ingre, idx) => (<p className='m-0 mb-3' key={idx}>{`${ingre}. `}</p>))}</div>
-                                    <div className='w-100 d-flex justify-content-between'>
-                                        <p className="precio">${premium.precio}</p>
-                                        <button className='btn btn-warning'>Ordenar</button>
+        <>
+            {info.length > 0 ?
+                <div className='contenedorTotalPremium'>
+                    <h2 className='tituloPremium'>Las Premium</h2>
+                    <div className='container contenedorPremium'>
+                        {info?.map(premium => (
+                            <div className="card hamburguesaPremium shadow" key={premium.id}>
+                                <div className="row g-0">
+                                    <div className="col-md-5 contenedorImagenPremium">
+                                        <img src={require(`../../assets/img/${premium.imagen}.png`)} className="img-fluid rounded-start" alt={premium.nombre} />
+                                    </div>
+                                    <div className="col-md-7">
+                                        <div className="card-body">
+                                            <h5 className="card-title">{premium.nombre}</h5>
+                                            <div className="card-text ingredientesPremium">{premium.ingredientes?.map((ingre, idx) => (<div className='ingre' key={idx}>{ingre}.</div>))}</div>
+                                            <div className='w-100 d-flex justify-content-between'>
+                                                <p className="precio">${premium.precio}</p>
+                                                <button className='btn btn-warning'>Ordenar</button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        ))}
                     </div>
-                ))}
-            </div>
-        </div>
+                </div>
+            :
+                <p>Cargando</p>
+            }
+        </>
      );
 }
  

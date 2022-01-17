@@ -31,7 +31,22 @@
 }
 
 .ingredientesPremium {
-  height: 65px;
+  height: 50px;
+  padding-right: 10px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.ingre {
+  height: 25px;
+  padding: 0 !important;
+  margin: 0 5px 0 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 480px) {

@@ -1,6 +1,6 @@
 import Creacion from '../../components/Creacion/Creacion';
 import Footer from '../../components/Footer';
-import Buscadas from '../../components/Opciones/Buscadas';
+import Buscadas from '../../components/Buscadas/Buscadas';
 import Portada from '../../components/Portada/Portada';
 import Premium from '../../components/Premium';
 import './Home.css'
