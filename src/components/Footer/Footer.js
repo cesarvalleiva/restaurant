@@ -6,7 +6,10 @@ const Footer = () => {
     return ( 
         <div className='footer'>
             <div className='container d-flex justify-content-between'>
-                <p>© 2022</p>
+                <div className="d-flex">
+                    <i className="bi bi-envelope me-2 align-items-center"></i>
+                    <p>info@bulldogburgers.com</p>
+                </div>
                 <div className='redesSociales'>
                     <img src={Instagram} alt="Instagram" />
                     <img src={Facebook} alt="Facebook" />
