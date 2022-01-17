@@ -25,7 +25,7 @@ const Premium = () => {
                             <div className="card hamburguesaPremium shadow" key={premium.id}>
                                 <div className="row g-0">
                                     <div className="col-md-5 contenedorImagenPremium">
-                                        <img src={require(`../../assets/img/${premium.imagen}.png`)} className="img-fluid rounded-start" alt={premium.nombre} />
+                                        <img src={require(`../../assets/img/premium/${premium.imagen}.png`)} className="img-fluid rounded-start" alt={premium.nombre} />
                                     </div>
                                     <div className="col-md-7">
                                         <div className="card-body">

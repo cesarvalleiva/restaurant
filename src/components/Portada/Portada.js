@@ -1,4 +1,4 @@
-import Hamburguesa from '../../assets/img/hambur.png';
+import Hamburguesa from '../../assets/img/hamburguesaPortada.png';
 import './Portada.css'
 
 const Portada = () => {

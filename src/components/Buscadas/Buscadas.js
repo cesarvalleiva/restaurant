@@ -23,7 +23,7 @@ const Buscadas = () => {
                     <div className='container contenedorOpciones'>
                         {info.map(buscada => (
                             <div key={buscada.id} className="card shadow buscadas">
-                                <img src={require(`../../assets/img/${buscada.imagen}.png`)} className="card-img-top imgOpciones" alt={buscada.nombre} />
+                                <img src={require(`../../assets/img/buscadas/${buscada.imagen}.png`)} className="card-img-top imgOpciones" alt={buscada.nombre} />
                                 <div className="card-body">
                                     <h5 className="card-title h5Buscadas ">{buscada.nombre}</h5>
                                     <div className="card-text ingredientesVertical">{buscada.ingredientes?.map((ingre, idx) => (<p className='m-0' key={idx}>{`- ${ingre}`}</p>))}</div>

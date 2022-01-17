@@ -47,7 +47,7 @@ const Creacion = () => {
                             <div className='ingredientes'>
                                 {info.map(ingrediente => (
                                     <button className={seleccionados.find(ingre => ingre.id === ingrediente.id) ? 'btn btn-warning ingredienteSeleccionado' : 'btn btn-outline-warning ingrediente'} key={ingrediente.id} onClick={() => seleccionar({...ingrediente})} disabled={seleccionados.find(ingre => ingre.id === ingrediente.id) ? true : false}>
-                                        <img src={require(`../../assets/img/${ingrediente.imagen}.png`)} alt={ingrediente.nombre} />
+                                        <img src={require(`../../assets/img/ingredientes/${ingrediente.imagen}.png`)} alt={ingrediente.nombre} />
                                         <div className='infoIngrediente'>
                                             <p>{ingrediente.nombre}</p>
                                             <p className='me-3'>{}${ingrediente.precio}</p>
@@ -61,7 +61,7 @@ const Creacion = () => {
                                         <h3>Tu pedido 🗒</h3>
                                         <div className='apagar'>
                                             <div className='apagarImagenNombre'>
-                                                <img src={require("../../assets/img/Carne.png")} alt="Carne" width={50} />
+                                                <img src={require("../../assets/img/ingredientes/Carne.png")} alt="Carne" width={50} />
                                                 <p>Carne</p>
                                             </div>
                                             <p>$350</p>
@@ -70,7 +70,7 @@ const Creacion = () => {
                                             <div key={selec.id} className='d-flex'>
                                                 <div className='apagar'>
                                                     <div className='apagarImagenNombre'>
-                                                        <img src={require(`../../assets/img/${selec.imagen}.png`)} alt={selec.nombre} width={50} />
+                                                        <img src={require(`../../assets/img/ingredientes/${selec.imagen}.png`)} alt={selec.nombre} width={50} />
                                                         <p>{selec.nombre} </p>
                                                     </div>
                                                     <div className="precioYeliminarIngrediente">

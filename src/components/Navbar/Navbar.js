@@ -1,4 +1,4 @@
-import Logo from '../../assets/img/logo4.png'
+import Logo from '../../assets/img/logo.png'
 import Facebook from '../../assets/img/facebookNavbar.png'
 import Instagram from '../../assets/img/instagramNavbar.png'
 import './Navbar.css'
