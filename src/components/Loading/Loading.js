@@ -6,6 +6,7 @@ const Loading = () => {
             <div class="spinner-border text-warning" role="status">
                 <span class="visually-hidden">Loading...</span>
             </div>
+            <p className='text-warning mt-3'>Cargando...</p>
         </div>
      );
 }

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import './Buscadas.css'
+import Loading from '../Loading/Loading'
 
 const Buscadas = () => {
     const [info, setInfo] = useState([])
@@ -36,7 +37,7 @@ const Buscadas = () => {
                     </div>
                 </div>
             :
-                <p>Cargando</p>
+                <Loading />
             }
         </>
      );

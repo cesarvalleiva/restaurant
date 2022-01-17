@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios'
 import './Creacion.css'
+import Loading from '../Loading/Loading';
 
 const Creacion = () => {
     const [seleccionados, setSeleccionados] = useState([]);
@@ -100,7 +101,7 @@ const Creacion = () => {
                     </div>
                 </div>
             :
-                <p>Cargando</p>
+                <Loading />
             }
         </>
      );
