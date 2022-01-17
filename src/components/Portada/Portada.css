@@ -48,6 +48,7 @@
 
 @media (max-width: 480px) {
   .contenedorPortada {
+    height: 500px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
