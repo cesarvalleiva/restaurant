@@ -26,7 +26,7 @@ const Buscadas = () => {
                                 <img src={require(`../../assets/img/${buscada.imagen}.png`)} className="card-img-top imgOpciones" alt={buscada.nombre} />
                                 <div className="card-body">
                                     <h5 className="card-title h5Buscadas ">{buscada.nombre}</h5>
-                                    <div className="card-text">{buscada.ingredientes?.map((ingre, idx) => (<p className='m-0' key={idx}>{`- ${ingre}`}</p>))}</div>
+                                    <div className="card-text ingredientesVertical">{buscada.ingredientes?.map((ingre, idx) => (<p className='m-0' key={idx}>{`- ${ingre}`}</p>))}</div>
                                     <div className='d-flex justify-content-between mt-4'>
                                         <p className="precio">${buscada.precio}</p>
                                         <a href="#" className="btn btn-warning">Ordenar</a>

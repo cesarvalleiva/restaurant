@@ -33,8 +33,6 @@ const Creacion = () => {
         obtenerInfo('ingredientes')
     }, [])
 
-    console.log(info)
-
     useEffect(() => {
         sumarTotal()
     }, [seleccionados])

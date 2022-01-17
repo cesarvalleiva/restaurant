@@ -64,4 +64,8 @@
     border: 0 !important;
     margin-bottom: 10px;
   }
+
+  .ingredientesVertical {
+    min-height: 100px;
+  }
 }
