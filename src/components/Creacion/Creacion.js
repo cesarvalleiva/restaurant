@@ -30,7 +30,7 @@ const Creacion = () => {
     }
 
     useEffect(() => {
-        obtenerInfo('ingredientes')
+        obtenerInfo()
     }, [])
 
     useEffect(() => {
