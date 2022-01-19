@@ -86,7 +86,7 @@ const Creacion = () => {
                                         <div className='total'>
                                             <div className='w-100 mt-3'>
                                                 <div className="d-grid gap-2">
-                                                    <button className='btn btn-warning realizarPedido'>Confirmar pedido</button>
+                                                    <button className='btn btn-warning realizarPedido' >Confirmar pedido</button>
                                                 </div>
                                             </div>
                                         </div>
